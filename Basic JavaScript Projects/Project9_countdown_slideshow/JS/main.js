@@ -34,7 +34,7 @@ function countdown() {
 	    seconds = seconds - 1; //input has 1 subtracted from it
 	    timer.innerHTML = seconds;
 	    var time = setTimeout(tick, 1000);//“setTimeout(tick, 1000);” means that the program is pausing for 1,000 milliseconds (i.e., 1 second).
-	    if (seconds == 1) { 
+	    if (seconds == -1) { 
 		    alert("Time's up!");
 		    clearTimeout (time) ;
 		    timer.innerHTML = "";
